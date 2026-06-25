@@ -1,0 +1,30 @@
+[6/25/2026 9:30 PM] Хэвил: Для скриптов из второго модуля используется репозиторий "skm2"
+Первое задание; Порядок запуска: 
+brsrv1.sh 
+hqrtr2.sh
+hqcli3.sh
+"https://raw.githubusercontent.com/hewill11/skm2/main/—-.sh -O —-.sh"
+[6/25/2026 10:12 PM] Хэвил: Сконфигурируйте ansible на сервере BR-SRV(После chrony):
+hq-srv: hq2.sh
+hq-cli: hq3.sh
+hq-rtr: hq4.sh
+br-rtr: br5.sh
+br-srv: br1.sh
+[6/25/2026 11:28 PM] Хэвил: После ансибла идет докер:
+BR-SRV: brdocker.sh
+Перед применением скрипта, нужно сделать следующее:
+1. Скачать исо файл с гугл диска - "https://inlnk.ru/vok2MR"
+2. Извлекаем его через Xarchiver/
+3. В проводнике папку Additional вписываем в /root
+И только после этого применяем скрипт.
+
+"https://drive.google.com/file/d/1tPSt192HTaWYULsIjsbEZE6bRV2qD01s/view"
+[6/25/2026 11:37 PM] Хэвил: Разверните веб приложениена сервере HQ-SRV:
+hq-srv: hqweb.sh (Скачать и извлечь additional.iso)
+hq-rtr: hqdds.sh
+hq-cli: hqcdc.sh
+[6/25/2026 11:58 PM] Хэвил: На маршрутизаторах сконфигурируйте статическую
+трансляцию портов:
+hq-srv: hqport.sh
+hq-rtr: hqnat.sh
+br-rtr: brnat.sh
